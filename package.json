@@ -1,8 +1,10 @@
 {
-  "name": "esmtocjs",
+  "name": "esmtocjs-cli",
   "version": "0.0.0",
   "description": "🧪 CLI to transpile individual ESM packages to CommonJS (experimental)",
-  "bin": "./index.mjs",
+  "bin": {
+    "cjstoesm": "./index.mjs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/talentlessguy/transpile-cli.git"
