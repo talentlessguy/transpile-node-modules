@@ -13,16 +13,24 @@ const json = JSON.parse(file)
 
 const { exports } = json
 
+let esmFilepath
+
 if (typeof exports === 'string') {
-  const esmSource = (await readFile(`./node_modules/${pkg}/${exports.slice(2)}`)).toString()
-
-  const output = tocjs.runTransform(esmSource, {
-    lenDestructure: 100,
-    lenModuleName: 100,
-    lenIdentifier: 100
-  })
-
-  await writeFile(`./node_modules/${pkg}/index.cjs`, output)
-
-  await writeFile(`./node_modules/${pkg}/package.json`, JSON.stringify({ ...json, main: './index.cjs' }, null, 2))
+  esmFilepath = exports
+} else if (typeof exports?.['import'] === 'string') {
+  esmFilepath = exports['import']
+} else if (typeof exports?.['.'] === 'string') {
+  esmFilepath = exports['.']
 }
+
+const esmSource = (await readFile(`./node_modules/${pkg}/${esmFilepath.slice(2)}`)).toString()
+
+const output = tocjs.runTransform(esmSource, {
+  lenDestructure: 100,
+  lenModuleName: 100,
+  lenIdentifier: 100
+})
+
+await writeFile(`./node_modules/${pkg}/index.cjs`, output)
+
+await writeFile(`./node_modules/${pkg}/package.json`, JSON.stringify({ ...json, main: './index.cjs' }, null, 2))

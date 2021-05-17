@@ -18,5 +18,6 @@ esmtocjs some-esm-pkg
 
 ## TODO
 
-- [x] `exports: "..."` support
-- [ ] `exports: { "import": "..." }` support
+- [x] `exports` support
+- [x] `exports['.']` support
+- [x] `exports.import` support
