@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  esm-to-cjs: ^1.2.0
+
+dependencies:
+  esm-to-cjs: 1.2.0
+
+packages:
+
+  /esm-to-cjs/1.2.0:
+    resolution: {integrity: sha512-pVKBUyde11DZ9fezHtcvX2Ha1hh48GaoVvTxsDkgukPFQ9fvJL/x1RIINU5qkpdW4evN338Wg97qItq8qedsKw==}
+    dev: false
