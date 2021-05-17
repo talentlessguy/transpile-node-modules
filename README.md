@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-pnpm i -g esmtocjs
+pnpm i -g esmtocjs-cli
 ```
 
 ## Usage
