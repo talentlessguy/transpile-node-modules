@@ -1,23 +1,18 @@
-# esmtocjs
+# transpile-node-modules
 
-> Alternative to [next-transpile-modules](https://github.com/martpie/next-transpile-modules)
-
-🧪 CLI to transpile individual ESM packages to CommonJS (experimental).
+CLI to transpile individual ESM packages to CommonJS with [esbuild](https://esbuild.github.io).
 
 ## Install
 
 ```sh
-pnpm i -g esmtocjs-cli
+pnpm i -g transpile-node-modules
 ```
 
 ## Usage
 
 ```sh
-esmtocjs some-esm-pkg
+transpile-node-modules <pkg> [target]
 ```
 
-## TODO
-
-- [x] `exports` support
-- [x] `exports['.']` support
-- [x] `exports.import` support
+- `pkg` - package to transpile
+- `target` - optional target environment (default: **es2018**)

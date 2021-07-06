@@ -1,0 +1,89 @@
+lockfileVersion: 5.3
+
+specifiers:
+  mdast-util-to-hast: ^11.1.1
+
+dependencies:
+  mdast-util-to-hast: 11.1.1
+
+packages:
+
+  /@types/hast/2.3.1:
+    resolution: {integrity: sha512-viwwrB+6xGzw+G1eWpF9geV3fnsDgXqHG+cqgiHrvQfDUW5hzhCyV7Sy3UJxhfRFBsgky2SSW33qi/YrIkjX5Q==}
+    dependencies:
+      '@types/unist': 2.0.5
+    dev: false
+
+  /@types/mdast/3.0.3:
+    resolution: {integrity: sha512-SXPBMnFVQg1s00dlMCc/jCdvPqdE4mXaMMCeRlxLDmTAEoegHT53xKtkDnzDTOcmMHUfcjyf36/YYZ6SxRdnsw==}
+    dependencies:
+      '@types/unist': 2.0.5
+    dev: false
+
+  /@types/mdurl/1.0.2:
+    resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
+    dev: false
+
+  /@types/unist/2.0.5:
+    resolution: {integrity: sha512-wnra4Vw9dopnuybR6HBywJ/URYpYrKLoepBTEtgfJup8Ahoi2zJECPP2cwiXp7btTvOT2CULv87aQRA4eZSP6g==}
+    dev: false
+
+  /mdast-util-definitions/5.0.0:
+    resolution: {integrity: sha512-TECPwsQ3xAFs+uFoZxN6HNrU46KK+Ct2j2KQbZA5JEYtxpFGOOW4U04p7b/jLuoRh+wYw/Iu83cIZxPdOOP0Bw==}
+    dependencies:
+      '@types/mdast': 3.0.3
+      '@types/unist': 2.0.5
+      unist-util-visit: 3.1.0
+    dev: false
+
+  /mdast-util-to-hast/11.1.1:
+    resolution: {integrity: sha512-F6/H+OeYjlGYYgHN8iBYCB2rJaBwEDKbV9mNdqfvGenjP1pdUrZ6joSBHnXZ5CzLF8oE1tH9xf9rJIpZQOx4vg==}
+    dependencies:
+      '@types/hast': 2.3.1
+      '@types/mdast': 3.0.3
+      '@types/mdurl': 1.0.2
+      '@types/unist': 2.0.5
+      mdast-util-definitions: 5.0.0
+      mdurl: 1.0.1
+      unist-builder: 3.0.0
+      unist-util-generated: 2.0.0
+      unist-util-position: 4.0.1
+      unist-util-visit: 3.1.0
+    dev: false
+
+  /mdurl/1.0.1:
+    resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
+    dev: false
+
+  /unist-builder/3.0.0:
+    resolution: {integrity: sha512-GFxmfEAa0vi9i5sd0R2kcrI9ks0r82NasRq5QHh2ysGngrc6GiqD5CDf1FjPenY4vApmFASBIIlk/jj5J5YbmQ==}
+    dependencies:
+      '@types/unist': 2.0.5
+    dev: false
+
+  /unist-util-generated/2.0.0:
+    resolution: {integrity: sha512-TiWE6DVtVe7Ye2QxOVW9kqybs6cZexNwTwSMVgkfjEReqy/xwGpAXb99OxktoWwmL+Z+Epb0Dn8/GNDYP1wnUw==}
+    dev: false
+
+  /unist-util-is/5.1.0:
+    resolution: {integrity: sha512-pWspZ+AvTqYbC+xWeRmzGqbcY8Na08Eowlfs2xchWTYot8vBBAq+syrE/LWS0bw1D/JOu4lwzDbEb6Mz13tK+g==}
+    dev: false
+
+  /unist-util-position/4.0.1:
+    resolution: {integrity: sha512-mgy/zI9fQ2HlbOtTdr2w9lhVaiFUHWQnZrFF2EUoVOqtAUdzqMtNiD99qA5a1IcjWVR8O6aVYE9u7Z2z1v0SQA==}
+    dev: false
+
+  /unist-util-visit-parents/4.1.1:
+    resolution: {integrity: sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==}
+    dependencies:
+      '@types/unist': 2.0.5
+      unist-util-is: 5.1.0
+    dev: false
+
+  /unist-util-visit/3.1.0:
+    resolution: {integrity: sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==}
+    dependencies:
+      '@types/unist': 2.0.5
+      unist-util-is: 5.1.0
+      unist-util-visit-parents: 4.1.1
+    dev: false

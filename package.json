@@ -1,30 +1,49 @@
 {
-  "name": "esmtocjs-cli",
-  "version": "0.0.2",
-  "description": "🧪 CLI to transpile individual ESM packages to CommonJS (experimental)",
+  "name": "transpile-node-modules",
+  "version": "0.0.0",
+  "description": "CLI to transpile individual ESM packages to CommonJS",
+  "type": "module",
   "bin": {
-    "esmtocjs": "./index.mjs"
+    "transpile-node-modules": "./bin.mjs"
   },
+  "exports": "./index.mjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talentlessguy/transpile-cli.git"
+    "url": "git+https://github.com/talentlessguy/transpile-node-modules.git"
   },
   "keywords": [
     "cjstoesm",
     "cjs",
     "esm",
-    "cli"
+    "cli",
+    "node_modules",
+    "transpile",
+    "cli",
+    "commonjs",
+    "legacy"
   ],
   "author": "v1rtl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/talentlessguy/transpile-cli/issues"
+    "url": "https://github.com/talentlessguy/transpile-node-modules/issues"
   },
-  "homepage": "https://github.com/talentlessguy/transpile-cli#readme",
+  "homepage": "https://github.com/talentlessguy/transpile-node-modules#readme",
   "dependencies": {
-    "esm-to-cjs": "^1.2.0"
+    "enhanced-resolve": "^5.8.2",
+    "esbuild": "^0.12.15"
   },
   "files": [
-    "./index.mjs"
-  ]
+    "./index.mjs",
+    "./bin.mjs"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "c8": "^7.7.3",
+    "mdast-util-to-hast": "^11.1.1",
+    "uvu": "^0.5.1"
+  },
+  "scripts": {
+    "test": "uvu",
+    "prepare": "pnpm test"
+  }
 }
