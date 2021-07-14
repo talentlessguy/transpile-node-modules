@@ -1,7 +1,7 @@
 import { suite } from 'uvu'
 import { exec } from 'child_process'
 import { promisify } from 'util'
-import { transpileNodeModules } from '../index.mjs'
+import { transpileNodeModules } from '../index.js'
 import { rm, access, readFile } from 'fs/promises'
 import { constants, readdirSync } from 'fs'
 import * as assert from 'uvu/assert'

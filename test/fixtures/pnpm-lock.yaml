@@ -8,14 +8,14 @@ dependencies:
 
 packages:
 
-  /@types/hast/2.3.1:
-    resolution: {integrity: sha512-viwwrB+6xGzw+G1eWpF9geV3fnsDgXqHG+cqgiHrvQfDUW5hzhCyV7Sy3UJxhfRFBsgky2SSW33qi/YrIkjX5Q==}
+  /@types/hast/2.3.2:
+    resolution: {integrity: sha512-Op5W7jYgZI7AWKY5wQ0/QNMzQM7dGQPyW1rXKNiymVCy5iTfdPuGu4HhYNOM2sIv8gUfIuIdcYlXmAepwaowow==}
     dependencies:
       '@types/unist': 2.0.5
     dev: false
 
-  /@types/mdast/3.0.3:
-    resolution: {integrity: sha512-SXPBMnFVQg1s00dlMCc/jCdvPqdE4mXaMMCeRlxLDmTAEoegHT53xKtkDnzDTOcmMHUfcjyf36/YYZ6SxRdnsw==}
+  /@types/mdast/3.0.4:
+    resolution: {integrity: sha512-gIdhbLDFlspL53xzol2hVzrXAbzt71erJHoOwQZWssjaiouOotf03lNtMmFm9VfFkvnLWccSVjUAZGQ5Kqw+jA==}
     dependencies:
       '@types/unist': 2.0.5
     dev: false
@@ -31,7 +31,7 @@ packages:
   /mdast-util-definitions/5.0.0:
     resolution: {integrity: sha512-TECPwsQ3xAFs+uFoZxN6HNrU46KK+Ct2j2KQbZA5JEYtxpFGOOW4U04p7b/jLuoRh+wYw/Iu83cIZxPdOOP0Bw==}
     dependencies:
-      '@types/mdast': 3.0.3
+      '@types/mdast': 3.0.4
       '@types/unist': 2.0.5
       unist-util-visit: 3.1.0
     dev: false
@@ -39,8 +39,8 @@ packages:
   /mdast-util-to-hast/11.1.1:
     resolution: {integrity: sha512-F6/H+OeYjlGYYgHN8iBYCB2rJaBwEDKbV9mNdqfvGenjP1pdUrZ6joSBHnXZ5CzLF8oE1tH9xf9rJIpZQOx4vg==}
     dependencies:
-      '@types/hast': 2.3.1
-      '@types/mdast': 3.0.3
+      '@types/hast': 2.3.2
+      '@types/mdast': 3.0.4
       '@types/mdurl': 1.0.2
       '@types/unist': 2.0.5
       mdast-util-definitions: 5.0.0
